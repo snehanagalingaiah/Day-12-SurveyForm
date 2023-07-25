@@ -1,0 +1,104 @@
+form{
+    margin: 5px 5px;
+}
+.name{
+    display: flex;
+    gap: 10px;
+
+}
+.name input[type="text"]{
+    width: 190px;
+}
+
+.outer-container{
+    width:90%;
+    margin: auto;
+    border: 1px solid;
+}
+
+#email{
+    width: 400px;
+}
+.rating input{
+    display:none;
+}
+.rating {
+    direction: rtl;
+    float:left;
+}
+.rating label{
+    display:inline-block;
+    width:40px;
+    cursor:pointer;
+    font-size: 30px;
+}
+.rating label:before{
+    content:"\2606"; 
+    position:absolute;
+    top:163px;
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    content:"\2605"; 
+    position:absolute;
+    top:163px;;
+    color:orange;
+}
+
+.satisfaction{
+    display:flex;
+    gap:20px;
+}
+
+.satisfaction-heading{
+    width: 230px;
+}
+
+.likely{
+    display:flex;
+    gap:20px;
+}
+
+.likely-heading{
+    width: 230px;
+}
+
+.satifaction-small{
+    display: none;
+}
+
+.likely-small{
+    display: none;
+}
+
+
+@media screen and (max-width: 750px){
+    .satisfaction,.likely{
+        display:none;
+    }
+
+    .satifaction-small, .likely-small{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .name{
+        flex-direction: column;
+    }
+    .rating label:before,.rating label:hover:after,
+    .rating label:hover ~ label:after,
+    .rating input:checked ~ label:after{
+        position: absolute;
+        top: 250px;
+     }
+
+     .name input[type="text"],#email,#text-area{
+        width:70%;
+     }
+
+
+
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="outer-container">
+  <form>
+  <div class="name">
+    <div class="fname">
+        <label><b>Name<span style="color: red">*</span></b></label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="fname">First</label>
+    </div>
+    <div class="lname">
+        <br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="lname">Last</label>
+    </div>
+  </div><br>
+  <div class="email">
+    <label><b>Email<span style="color: red">*</span></b></label><br>
+    <input type="text" id="email" name="email">
+  </div><br>
+
+  <div class="rating-stars">
+  <label><b>Your Experience:<span style="color: red">*</span></b></label><br>
+  <div class="rating">
+    <input type="radio" id="star5" name="rate"/>
+    <label for="star5"></label>  <!--for has value star5 which is the id of radio button input. by doing this when we click on the label the radio button is-->
+    <input type="radio" id="star4" name="rate"/>
+    <label for="star4"></label>
+    <input type="radio" id="star3" name="rate"/>
+    <label for="star3"></label>
+    <input type="radio" id="star2" name="rate"/>
+    <label for="star2"></label>
+    <input type="radio" id="star1" name="rate"/>
+    <label for="star1"></label>
+  </div>
+</div>
+  <br><br>
+
+  <p class="satisfaction">Overall, how would you rate your experiene with us?</p>
+  <label class="satisfaction"><b>How satisfied are you with<span style="color: red">*</span></b></label><br>
+  <div class="satisfaction">
+    <div class="satisfaction-heading">
+      <br>
+      <p>Purchase</p>
+      <p>Service</p>
+      <p>Company Overall</p>
+    </div>
+    <div>
+      Very Unsatisfied<br>
+      <p><input type="radio" name="purchase"/></p>
+      <p><input type= "radio" name="service"/></p>
+      <p><input type="radio" name="company"/></p>
+    </div>
+    <div>
+       Unsatisfied<br>
+      <p><input type="radio" name="purchase"/></p>
+      <p><input type= "radio" name="service"/></p>
+      <p><input type="radio" name="company"/></p>
+    </div>
+    <div>
+      Neutal<br>
+      <p><input type="radio" name="purchase"/></p>
+      <p><input type= "radio" name="service"/></p>
+      <p><input type="radio" name="company"/></p>
+    </div>
+    <div>
+      Satisfied<br>
+      <p><input type="radio" name="purchase"/></p>
+      <p><input type= "radio" name="service"/></p>
+      <p><input type="radio" name="company"/></p>
+    </div>
+    <div>
+      Very satisfied<br>
+      <p><input type="radio" name="purchase"/></p>
+      <p><input type="radio" name="service"/></p>
+      <p><input type="radio" name="company"/></p>
+    </div>
+  </div><br>
+
+  <label class="likely"><b>How likely are you to<span style="color: red">*</span></b></label><br>
+  <div class="likely">
+    <div class="likely-heading">
+      <br>
+      <p>Buy from us again</p>
+      <p>Recommend our product to others</p>
+      <p>Recommend our comapny to others</p>
+    </div>
+    <div>
+      Very Unlikely<br>
+      <p><input type="radio" name="buy"/></p>
+      <p><input type= "radio" name="recproduct"/></p>
+      <p><input type="radio" name="reccompany"/></p>
+    </div>
+    <div>
+       Unlikely<br>
+      <p><input type="radio" name="buy"/></p>
+      <p><input type= "radio" name="recproduct"/></p>
+      <p><input type="radio" name="reccompany"/></p>
+    </div>
+    <div>
+      Neutal<br>
+      <p><input type="radio" name="buy"/></p>
+      <p><input type= "radio" name="recproduct"/></p>
+      <p><input type="radio" name="reccompany"/></p>
+    </div>
+    <div>
+      Likely<br>
+      <p><input type="radio" name="buy"/></p>
+      <p><input type= "radio" name="recproduct"/></p>
+      <p><input type="radio" name="reccompany"/></p>
+    </div>
+    <div>
+      Very Unlikely<br>
+      <p><input type="radio" name="buy"/></p>
+      <p><input type="radio" name="recproduct"/></p>
+      <p><input type="radio" name="reccompany"/></p>
+    </div>
+  </div>
+
+  <p class="satifaction-small">Overall, how would you rate your experiene with us?</p>
+  <label class="satifaction-small"><b>How satisfied are you with<span style="color: red">*</span> </b></label><br>
+  <div class="satifaction-small">
+    <div class="satifaction-small-purchase">
+       <p><b>1.Purchase</b></p>
+       <label style="display:inline-block; width:120px">Very Unsatisfied</label><input type="radio" name="satifaction-small-purchase"/><br>
+       <label style="display:inline-block; width:120px">Unsatisfied</label><input type="radio" name="satifaction-small-purchase"/><br>
+       <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="satifaction-small-purchase"/><br>
+       <label style="display:inline-block; width:120px">Satisfied</label><input type="radio" name="satifaction-small-purchase"/><br>
+       <label style="display:inline-block; width:120px">Very Satisfied</label><input type="radio" name="satifaction-small-purchase"/><br>
+    </div>
+    <div class="satifaction-small-service">
+      <p><b>2.Service</b></p>
+      <label style="display:inline-block; width:120px">Very Unsatisfied</label><input type="radio" name="satifaction-small-service"/><br>
+      <label style="display:inline-block; width:120px">Unsatisfied</label><input type="radio" name="satifaction-small-service"/><br>
+      <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="satifaction-small-service"/><br>
+      <label style="display:inline-block; width:120px">Satisfied</label><input type="radio" name="satifaction-small-service"/><br>
+      <label style="display:inline-block; width:120px">Very Satisfied</label><input type="radio" name="satifaction-small-service"/><br>
+    </div>
+    <div class="satifaction-small-company">
+      <p><b>3.Company Overall</b></p>
+      <label style="display:inline-block; width:120px">Very Unsatisfied</label><input type="radio" name="satifaction-small-company"/><br>
+      <label style="display:inline-block; width:120px">Unsatisfied</label><input type="radio" name="satifaction-small-company"/><br>
+      <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="satifaction-small-company"/><br>
+      <label style="display:inline-block; width:120px">Satisfied</label><input type="radio" name="satifaction-small-company"/><br>
+      <label style="display:inline-block; width:120px">Very Satisfied</label><input type="radio" name="satifaction-small-company"/><br>
+    </div>
+  </div><br><br>
+
+  <label class="likely-small"><b>How likely are you to<span style="color: red">*</span> </b></label><br>
+  <div class="likely-small">
+    <div class="likely-small-buy">
+      <p><b>1.Buy from us again</b></p>
+      <label style="display:inline-block; width:120px">Very Unlikely</label><input type="radio" name="likely-small-buy"/><br>
+      <label style="display:inline-block; width:120px">Unlikely</label><input type="radio" name="likely-small-buy"/><br>
+      <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="likely-small-buy"/><br>
+      <label style="display:inline-block; width:120px">Likely</label><input type="radio" name="likely-small-buy"/><br>
+      <label style="display:inline-block; width:120px">Very likely</label><input type="radio" name="likely-small-buy"/><br>
+    </div>
+    <div class="likely-small-products">
+      <p><b>2.Recommend our products to others</b></p>
+      <label style="display:inline-block; width:120px">Very Unlikely</label><input type="radio" name="likely-small-products"/><br>
+      <label style="display:inline-block; width:120px">Unlikely</label><input type="radio" name="likely-small-products"/><br>
+      <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="likely-small-products"/><br>
+      <label style="display:inline-block; width:120px">Likely</label><input type="radio" name="likely-small-products"/><br>
+      <label style="display:inline-block; width:120px">Very likely</label><input type="radio" name="likely-small-products"/><br>
+    </div>
+    <div class="likely-small-company">
+      <p><b>3.Recommend our company to others</b></p>
+      <label style="display:inline-block; width:120px">Very Unlikely</label><input type="radio" name="likely-small-company"/><br>
+      <label style="display:inline-block; width:120px">Unlikely</label><input type="radio" name="likely-small-company"/><br>
+      <label style="display:inline-block; width:120px">Neutral</label><input type="radio" name="likely-small-company"/><br>
+      <label style="display:inline-block; width:120px">Likely</label><input type="radio" name="likely-small-company"/><br>
+      <label style="display:inline-block; width:120px">Very likely</label><input type="radio" name="likely-small-company"/><br>
+    </div>
+  </div>
+
+  <p><b>Additional comments or suggestions</b></p>
+  <textarea id="text-area" rows="6" cols="60"></textarea><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</body>
+</html>
